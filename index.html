@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اذكار</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            color:rgb(227, 242, 210);
+            text-align: right;
+        }
+        body{
+
+            background-color:rgb(78, 92, 148);
+            height: 1000px;
+
+        }
+        img{
+            width: 200x;
+            height: 200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .active {
+            background-color:rgb(159, 114, 31);
+            padding: 5px;
+            font-size: 30px;
+            border-radius: 5px;
+        }
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            font-size: 24px;
+            margin: 10px;
+        }
+        li{
+            padding-left: 150px;
+            padding-right: 150px;
+
+        }
+        li a:hover{
+            background-color:rgb(159, 114, 31);
+            padding: 5px;
+            font-size:30px ;
+            border-radius:5px ;
+        }
+        h1{
+            margin: 50px;
+            text-align: center;
+            color:rgb(13, 39, 16);
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 30%;
+        }
+
+        .card {
+            width: 420px;
+            background-color:rgb(36, 44, 76);
+            border: 2px solid rgba(213, 17, 17, 0.2);
+            border-radius: 10px;
+            padding: 30px 40px;
+        }
+        h3{
+            margin: 50px;
+            text-align: center;
+            font-size:50px ;
+            border-radius: 10px;
+            background-color:rgb(159, 114, 31);
+        }
+        #btn {
+            margin-top: 20px;
+            padding: 10px;
+            background-color:rgb(64, 78, 131);
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            right: 10%;
+            margin-right:115px ;
+
+        }
+        #btn:hover{
+            background-color: rgb(58, 49, 38);
+        }
+
+        #output {
+            margin-top: 20px;
+            text-align: center;
+            color: rgb(227, 242, 210);
+        }
+
+    </style>
+</head>
+<body>
+    <img src="Untitled_logo_1_free-file-removebg-preview.png" alt="" >
+
+    <ul>
+
+        <li><a href="#">القران </a></li>
+        <li><a href="#" class="active">الاذكار </a></li>
+        <li><a href="#">تلاوه</a></li>
+        <li><a href="#">الحديث</a></li>
+    </ul>
+    <h1>صلي علي اشرف المرسلين</h1>
+
+    <div class="container">
+        <div class="card">
+            <h3>الأذكار</h3>
+            <button id="btn">اذكار المساء</button>
+            <div id="output"></div>
+        </div>
+    </div>
+</body>
+<script src="/azkar.js"></script>
+
+</html>
+
+
+!
